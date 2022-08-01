@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "549245173182",
+    "project_id": "androidproject2-24849",
+    "storage_bucket": "androidproject2-24849.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:549245173182:android:8a94a90a63cb5e7ae8cdef",
+        "android_client_info": {
+          "package_name": "Rabia.examples.surfaceviewexample3_kt"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "549245173182-8eqvrnnhsi3ql0dcq908g16p19f4pume.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBE5hLQhme8wTN0s3eyFi6FQAZ0VZ26IMU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "549245173182-8eqvrnnhsi3ql0dcq908g16p19f4pume.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

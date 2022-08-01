@@ -216,13 +216,12 @@ class GameView @JvmOverloads constructor(
     private fun playMusic() {
         Log.i("Nitesh", "playMusic")
         if (mediaPlayer == null)
-            mediaPlayer = MediaPlayer.create(mContext, R.raw.beat_it)
+            mediaPlayer = MediaPlayer.create(mContext, R.raw.you_got_it)
         if (mediaPlayer?.isPlaying == false)
             mediaPlayer?.start()
     }
 
     private fun stopMusic() {
-        Log.i("Nitesh", "stopMusic")
         if (mediaPlayer?.isPlaying == true) {
             mediaPlayer?.stop()
             mediaPlayer = null
