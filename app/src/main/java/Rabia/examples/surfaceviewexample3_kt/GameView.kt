@@ -27,6 +27,7 @@ class GameView @JvmOverloads constructor(
     private var mViewWidth = 0
     private var mViewHeight = 0
     private val mSurfaceHolder: SurfaceHolder
+    private var circleColor = Color.GREEN
     var mediaPlayer: MediaPlayer? = null
 
     init {
@@ -82,7 +83,7 @@ class GameView @JvmOverloads constructor(
 
                 canvas = mSurfaceHolder.lockCanvas()
                 // Fill the canvas with white and draw the bitmap.
-                canvas.drawColor(Color.GREEN) // added circle color green
+                canvas.drawColor(circleColor) // added circle color green
                 canvas.save()
                 canvas.drawBitmap(mBitmap!!, mBitmapX.toFloat(), mBitmapY.toFloat(), mPaint)
                 // Add clipping region and fill rest of the canvas with black.
@@ -119,8 +120,9 @@ class GameView @JvmOverloads constructor(
                     canvas.drawText(
                         "GOT IT!", (mViewWidth / 3).toFloat(), (mViewHeight / 2).toFloat(), mPaint
                     )
-
+                    circleColor = Color.WHITE
                 } else {
+                    circleColor = Color.GREEN
                     stopMusic()
                 }
                 // Clear the path data structure.
